@@ -10,8 +10,12 @@ router.get('/', function(req, res, next) {
   res.render(
     'index', 
     { 
-      title: 'Home', 
-      name: 'Julio' 
+      title: 'Welcome', 
+      name: 'Chung Hin Ng(Allen)',
+      description : 'Hello, welcome to my portfolio of COMP229 - Assignment 1. Here, you can find my information, projects, services. It is my pleasure to invite you to my page, thank you.',
+      description2 :'About Me',
+      description3 : '"To build the most convenient software."'
+
     }
   );
 });
@@ -40,19 +44,14 @@ router.get('/about', function(req, res, next) {
     'index', 
     { 
       title: 'About Me',
-      name: 'Julio' 
+      name: 'Julio',
+      description:'here is my detail',
+      description2 :'',
+      description3 :''
     }
   );
 });
 
-router.get('/contact', function(req, res, next) {
-  res.render(
-    'index', 
-    { 
-      title: 'Contact',
-      name: 'Julio' 
-    }
-  );
-});
+
 
 module.exports = router;
