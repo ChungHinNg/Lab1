@@ -1,6 +1,6 @@
-// Student ID: 1234568796
-// Name: Julio Vinicius
-// Data: Oct 01, 2022
-
+// <!--  File name: assignment1
+// Student ID: 301236167
+// Name: Chung Hin Ng
+// Data: Oct 07, 2022 -->
 
 console.log("it goes to the client-side.");

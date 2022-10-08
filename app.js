@@ -1,3 +1,7 @@
+// <!--  File name: assignment1
+// Student ID: 301236167
+// Name: Chung Hin Ng
+// Data: Oct 07, 2022 -->
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -5,7 +9,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var usersRouter2 = require('./routes/contact');
 
 
@@ -25,8 +28,8 @@ app.use('/public/', express.static('./public'));
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/contact', usersRouter2);
+
 
 
 // catch 404 and forward to error handler
