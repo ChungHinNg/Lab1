@@ -1,0 +1,80 @@
+/<!--  File name: assignment1
+    // Student ID: 301236167
+    // Name: Chung Hin Ng
+    // Data: Oct 07, 2022 -->
+<% include partials/header.ejs %>
+    <br>
+    <h2><%= title %></h2>
+
+    <% if(title == "Projects"){  %>
+        <div class="container mt-3">
+            
+            
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>Photo</th>
+                <th>Short Description</th>
+                <th>Role</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                <td><a href="../public/images/project1.jpg" ><img src="images/project1.jpg"  height="300" width="530" /></a></td>
+                <td>A software for student apply courses</td>
+                <td>Role : Developer,<br>Desinger</td>
+                </tr>
+                <tr>
+                <td><a href="../public/images/project2.jpg" ><img src="images/project2.jpg"  height="300" width="530" /></a></td>
+                <td>A weside page for a real estate agent</td>
+                <td>Role : Developer,<br>Desinger</td>
+                </tr>
+                <tr>
+                <td><a href="../public/images/project3.jpg" ><img src="images/project3.jpg"  height="300" width="530" /></a></td>
+                <td>A video of final project <br><br><a href="https://youtu.be/UBq-LdaQCEc">link</a></td> 
+                <td>Role : Director,<br>Camera operator
+                </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    <% } else { %>  
+        
+        <div class="container mt-3">
+            <img src="images/1111.png"  height="340" width="700" /><br><br>
+
+            <table class="table table-dark">
+            <thead>
+                <tr>
+                <th>Services Provided</th>
+                <th>Description</th>
+                <th>Skill set/item</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Web development</td>
+                <td>Plan, create and code internet sites and web pages, with sounds, pictures, graphics and video clips</td>
+                <td>HTML, CSS, Java, Javascript, Node js, Python, C#, PHP, C#...</td>
+                </tr>
+                <tr>
+                <td>Software design</td>
+                <td>To facilitate analysis, planning, design and develop personal software</td>
+                <td>Java, Python, C++, C#...</td>
+                </tr>
+                <tr>
+                <td>Filming</td>
+                <td>Professional personal filming </td>
+                <td>Adobe Premiere Pro,canon eos rp...</td>
+                </tr>
+            </tbody>
+            </table>
+            <img src="images/222.jpg"  height="450" width="700" /><br><br>
+
+        </div>
+  
+    <% } %>
+  
+
+<% include partials/footer.ejs %>
+ 
