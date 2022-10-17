@@ -8,6 +8,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.css">
   </head>
   <body>
     <main id="mainContent">
@@ -17,42 +18,54 @@
     <!-- Navbar with bootstrap -->
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
       <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logomini.jpg" alt="logo" style="width:40px;">
+        </a>
         <ul class="navbar-nav">
           <li class="nav-item">
             <% if(title == "Home"){  %>
-              <a class="nav-link active" href="/">Home</a>
+              <a class="nav-link active" href="/"><i class="fa-regular fa-folder-open"></i>Home</a>
             <% } else { %>  
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="/"><i class="fa-regular fa-folder-open"></i>Home</a>
             <% } %>
           </li>
           <li class="nav-item">
             <% if(title == "Projects"){  %>
-              <a class="nav-link active" href="/projects">Projects</a>
+              <a class="nav-link active" href="/projects"><i class="fa-regular fa-folder-open"></i>Projects</a>
             <% } else { %>  
-              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
+                <i class="fa-regular fa-folder-open"></i>Projects</a>
             <% } %>
+
           </li>
           <li class="nav-item">
             <% if(title == "Services"){  %>
-              <a class="nav-link active" href="/services">Services</a>
+              <a class="nav-link active" href="/services"><i class="fa-regular fa-folder-open"></i>Services</a>
             <% } else { %>  
-              <a class="nav-link" href="/services">Services</a>
+              <a class="nav-link" href="/services"><i class="fa-regular fa-folder-open"></i>Services</a>
             <% } %>
           </li>
           <li class="nav-item">
             <% if(title == "About Me"){  %>
-              <a class="nav-link active" href="/about">About Me</a>
+              <a class="nav-link active" href="/about"><i class="fa-regular fa-folder-open"></i>About Me</a>
             <% } else { %>  
-              <a class="nav-link" href="/about">About Me</a>
+              <a class="nav-link" href="/about"><i class="fa-regular fa-folder-open"></i>About Me</a>
             <% } %>
           </li>
           <li class="nav-item">
             <% if(title == "Contact"){  %>
-              <a class="nav-link active" href="/contact/contactme">Contact</a>
+              <a class="nav-link active" href="/contact/contactme"><i class="fa-regular fa-folder-open"></i>Contact</a>
             <% } else { %>  
-              <a class="nav-link" href="/contact/contactme">Contact</a>
+              <a class="nav-link" href="/contact/contactme"><i class="fa-regular fa-folder-open"></i>Contact</a>
             <% } %>
             </li>
+            <li class="nav-item">
+              <% if(title == "Business Contacts List"){  %>
+                <a class="nav-link active" href="/businessContacts/list"><i class="fa-regular fa-folder-open"></i>Business Contacts</a>
+              <% } else { %>  
+                <a class="nav-link" href="/businessContacts/list"><i class="fa-regular fa-folder-open"></i>Business Contacts</a>
+              <% } %>
+              </li>
         </ul>
       </div>
     </nav>
