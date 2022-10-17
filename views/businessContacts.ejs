@@ -1,0 +1,53 @@
+ <!--  File name: assignment1
+    // Student ID: 301236167
+    // Name: Chung Hin Ng
+    // Data: Oct 07, 2022 -->
+
+
+    <% include partials/header.ejs %>
+
+
+    <main class="container">
+      <div class="row">
+          <h1><%= title %></h1>
+          <br>
+          <div>
+              <a href="/businessContacts/add" class="btn btn-primary align-self-end" role="button">
+                  <i class="fas fa-plus-circle"></i> 
+                  Add a new contact
+              </a>                
+          </div>
+  
+          <div class="table-responsive">
+              <table class="table table-bordered table-striped table-hover">
+                  <!-- Header Row-->
+                  <tr>
+                      <th class="text-center">Contact Name</th>
+                      <th class="text-center">Contact Number</th>
+                      <th class="text-center">Email Address</th>
+                      <th class="text-center" colspan="2">Actions</th>
+                  </tr>
+  
+                  <!-- Repeatable Template Row -->
+  
+                  <% for(let i = 0; i < ContactsList.length; i++) { %>
+
+                      <tr>
+                          <td class="text-center"><%= ContactsList[i].ContactName %></td>
+                          <td class="text-center"><%= ContactsList[i].ContactNumber %></td>
+                          <td class="text-center"><%= ContactsList[i].EmailAddress %></td>
+                          <td class="text-center">
+                              <a href="/businessContacts/edit/<%= ContactsList[i]._id %>" class="btn btn-primary btn-sm">
+                              <i class="fas fa-pencil-alt"></i></a>
+                          </td>
+                          <td class="text-center">
+                              <a href="/businessContacts/delete/<%= ContactsList[i]._id %>" class="btn btn-danger btn-sm">
+                              <i class="fas fa-trash-alt"></i></a>
+                          </td>
+                      </tr>
+                  <% } %>
+              </table>
+          </div>
+      </div>
+    </main>
+<% include partials/footer.ejs %> 
