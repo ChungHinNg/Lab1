@@ -8,7 +8,8 @@ let contactslistModel = mongoose.Schema(
     number: Number,
     email: String,
 
-},{
+},
+{
 collection: "contactslist"
 
 }

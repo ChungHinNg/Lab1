@@ -13,6 +13,7 @@ else
     res.render('businessContacts/list',{
             title: 'Business Contacts List',
             ContactsList : contactsListss,
+            userName: req.user ? req.user.username : ''
         })            
     }
 })
