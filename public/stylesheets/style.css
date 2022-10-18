@@ -24,7 +24,12 @@ footer {
   font-style: italic;
   font-size:small;
 }
+.container1{
+  margin-bottom: 60px;
+  margin-left: 185px;
+  
 
+}
 .flash{
   color: red;
 }

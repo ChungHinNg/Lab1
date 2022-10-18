@@ -21,6 +21,7 @@ router.get('/about', function(req, res, next) {
     { 
       title: 'About Me',
       description:'My name is Chung Hin Ng(Allen). I am student of Centennial College, studying in Software Engineering Technician program. On the way of being a software engineer.',
+      userName: req.user ? req.user.username : ''
 
     }
   );
@@ -32,7 +33,7 @@ router.get('/businessContacts', function(req, res, next) {
     { 
       title: 'Business Contacts List',
       description:'My name is Chung Hin Ng(Allen). I am student of Centennial College, studying in Software Engineering Technician program. On the way of being a software engineer.',
-
+        userName: req.user ? req.user.username : ''
     }
   );
 });
